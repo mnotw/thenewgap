@@ -1,0 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<footer class="main_footer">
+	<div class="main_footer_content">
+		<p>Jonathan's Blog--thenewgap.com</p>
+		<p>Email-admin@thenewgap.com</p>
+	</div>
+</footer>
+<script type="text/javascript" src="js/jquery-1.8.2.js" ></script>

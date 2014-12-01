@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.reload" value="true" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<constant name="struts.convention.default.parent.package" value="root"/>
+	
+<package name="root"  extends="struts-default">
+
+	<global-results>  
+            <result name="input">/jsp/error.jsp</result>  
+    </global-results>  
+    
+	<!-- 按名称搜索-->
+	<action name="search" class="com.thenewgap.action.UserAction" method="findByName">
+		<result name="success">/jsp/welcome.jsp</result>
+	</action>
+	<!-- 下面三个action处理前台传过来的增删改请求，然后redirect回主页 -->
+	<action name="handleinseart" class="com.thenewgap.action.UserAction" method="inseart">
+		<result name="success" type="redirect">/</result>
+	</action>
+	<action name="handleupdate" class="com.thenewgap.action.UserAction" method="update">
+		<result name="success" type="redirect">/</result>
+	</action>
+	<action name="handledelete" class="com.thenewgap.action.UserAction" method="delete">
+		<result name="success" type="redirect">/</result>
+	</action>
+	
+	<!-- 欢迎页面 -->
+	<action name="" class="com.thenewgap.action.ArticleAction" method="findAll">
+		<result type="redirect">/getAllArticle</result>
+	</action>
+	
+	<!-- 文章页面处理 转发 -->
+	<action name="getAllArticle" class="com.thenewgap.action.ArticleAction" method="findAll">
+		<result name="success" type="dispatcher">/index.jsp</result>
+	</action>
+	
+	<!-- 获得单篇文章 -->
+	<action name="findArticle" class="com.thenewgap.action.ArticleAction" method="findById">
+		<result name="success" type="dispatcher">/article.jsp</result>
+	</action>
+	
+	<!-- 欢迎页面 
+	<action name="" class="com.thenewgap.action.UserAction" method="findAll">
+	<result></result>
+	</action>-->
+</package>
+
+</struts>

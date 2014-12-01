@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<div class="aside_container">
+				<aside class="aside_body">
+					<section class="aside_sns aside_article">
+						<img src="image/weibo.png"/>
+						<img src="image/dingyue.png">
+					</section>
+					<section class="aside_article">
+						<header>最新文章</header>
+						<p>Good news for Android users</p>
+						<p>Microsoft Updates Office Mobile for Android with OneDrive Sharing, Dropbox Support</p>
+						<p>a new version available for download in Google Play Store</p>
+						<p>the Redmond-based company has just announced</p>
+					</section>
+					<section class="aside_article">
+						<header>热门文章</header>
+						<p>Good news for Android users</p>
+						<p>Microsoft Updates Office Mobile for Android with OneDrive Sharing, Dropbox Support</p>
+						<p>a new version available for download in Google Play Store</p>
+						<p>the Redmond-based company has just announced</p>
+					</section>
+				</article>
+				</aside>
+			</div>
+			<div id="scroll_top_button"></div>

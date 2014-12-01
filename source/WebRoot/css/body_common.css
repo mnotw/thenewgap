@@ -1,0 +1,91 @@
+.main_wrapper{
+	width: 1000px;
+	height:auto;
+	margin: 0 auto;
+	background: #F5F5F5;
+	padding-top: 90px;
+	position: relative;
+}
+.article_container{
+	margin: 5px;
+	width: 720px;
+	float: left;
+}
+.article_body{
+	margin: 5px;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-bottom: 20px;
+	padding: 5px;
+	background: white;
+	border:1px solid #DADADA;
+	border-radius: 7px;
+	box-shadow: 5px 5px 10px #DADADA;
+}
+.aside_container{
+	margin: 5px;
+	width: 260px;
+	float: left;
+}
+.aside_sns img{
+	padding-top: 10px;
+	max-width:100px; 
+	_width:expression_r(this.width<400px?"auto":"400px");
+	-webkit-transition: transform 0.1s;
+	-moz-transition: transform 0.1s;
+	-ms-transition: transform 0.1s;
+	-o-transition: transform 0.1s;
+	transition: transform 0.1s;
+}
+.aside_sns img:hover{
+	padding-top: 10px;
+	max-width:100px; 
+	_width:expression_r(this.width<400px?"auto":"400px");
+	-ms-transform:scale(1.2,1.2); 	 
+	-moz-transform:scale(1.2,1.2); 	 
+	-webkit-transform:scale(1.2,1.2);  
+	-o-transform:scale(1.2,1.2);  
+	transform:scale(1.2,1.2);
+}
+.aside_article{
+	margin: 5px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #DADADA;
+	box-shadow: 5px 5px 10px #DADADA ;
+	background: white;
+}
+.aside_article header{
+	margin: 0 atuo;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-bottom: 1px solid #BCC0C4;
+	color: #2e3038;
+
+	font-family: 'Microsoft PhagsPa','museo_slab','Microsoft YaHei', 'WenQuanYi Micro Hei', 'tohoma,sans-serif';
+	font-size: 18px;
+	font-weight: bold;
+}
+.aside_article p{
+	font-family: 'Microsoft PhagsPa','museo_slab','Microsoft YaHei', 'WenQuanYi Micro Hei', 'tohoma,sans-serif';
+	font-size: 16px;
+	line-height: 20px;
+	color: #2e3235;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#scroll_top_button{
+	display: none;
+	position: absolute;
+	z-index: 99999;
+	width: 48px;
+	height: 49px;
+	background: url('../image/scroll_top.png') no-repeat;
+	cursor: pointer;
+}
+#scroll_top_button:hover{
+	background: url('../image/scroll_top.png') no-repeat -48px 0;
+}

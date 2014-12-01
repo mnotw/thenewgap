@@ -1,0 +1,23 @@
+.main_footer{
+	clear: both;
+	width: 100%;
+	height: auto;
+	background: #cdcdcd;
+}
+.main_footer_content{
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.main_footer_content p{
+	width: 100%;
+    padding-top: 10px;
+	color: #8e8e8e;
+	line-height: 15px;
+	font-size: 15px;
+	font-family: 'Microsoft YaHei', 'WenQuanYi Micro Hei','museo_slab', 'tohoma,sans-serif';
+}
+

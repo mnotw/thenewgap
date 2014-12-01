@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="thenewgap"
+  id="myeclipse.1416797068978"
+  context-root="/thenewgap"
+  j2ee-spec="5.0"
+  archive="thenewgap.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

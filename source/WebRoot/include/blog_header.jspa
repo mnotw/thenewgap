@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"  pageEncoding="UTF-8"%>
+<header class="blog_header">
+			<div class="blog_title">Jonathan's Blog</div>
+			<div class="blog_nav_bar">
+				<nav class="blog_nav">
+					<ul class="nav_ul">
+						<li>
+							News
+							<ul class="nav_ul_sub">
+								<li><a target="_self" href="article.html">New&nbsp;&nbsp;Zealand</a></li>
+								<li><a target="_self" href="article.html">Australia</a></li>
+								<li><a target="_self" href="article.html">Britain</a></li>
+								<li><a target="_self" href="article.html">France</a></li>
+							</ul>
+						</li>
+						<li>
+							Technology
+							<ul class="nav_ul_sub">
+								<li><a target="_self" href="article.html">Apple</a></li>
+								<li><a target="_self" href="article.html">Google</a></li>
+								<li><a target="_self" href="article.html">Microsoft</a></li>
+								<li><a target="_self" href="article.html">Oracle</a></li>
+							</ul>
+						</li>
+						<li>
+							Forum
+							<ul class="nav_ul_sub">
+								<li><a target="_self" href="article.html">Java</a></li>
+								<li><a target="_self" href="article.html">PPH</a></li>
+								<li><a target="_self" href="article.html">Node.js</a></li>
+								<li><a target="_self" href="article.html">JavaScript</a></li>
+								<li><a target="_self" href="article.html">Relationships</a></li>
+							</ul>
+						</li>
+						<li>
+							About me
+							<ul class="nav_ul_sub">
+								<li><a target="_self" href="article.html">Contact</a></li>
+								<li><a target="_self" href="article.html">General&nbsp;&nbsp;Introduction</a></li>
+							</ul>
+						</li>
+					</ul>
+			    </nav>
+			</div>
+		</header>

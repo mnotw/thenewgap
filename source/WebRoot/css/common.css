@@ -1,0 +1,233 @@
+@CHARSET "UTF-8";
+/*****reset.css****/
+header,footer,article,aside,hgroup,div,nav,body,img,p,ul,li{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	background: #ffffff;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+a:visited {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: underline;
+}
+
+
+/******头部的css文件******/
+.blog_header{
+	width: 100%;
+	height: 90px;
+	background: #2A536A;
+	position: fixed;
+	z-index: 9999;
+}
+.blog_title{
+	width: 1000px;
+	height: 60px;
+	margin: 0 auto;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight:bolder;
+	font-family: 'Microsoft YaHei', 'WenQuanYi Micro Hei','museo_slab', 'tohoma,sans-serif';
+	font-style:italic;
+}
+.blog_nav_bar{
+	width: 100%;
+	height: 30px;
+	background: #2F3237;
+}
+.blog_nav{
+	width: 1000px;
+	height: 30px;
+	margin: 0 auto;
+	background: #2F3237;
+}
+.nav_ul,.nav_ul li{
+	height: 30px;
+	display: inline-block;
+}
+.nav_ul li{
+	line-height: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 20px;
+	font-weight:  bolder;
+	font-family: 'Microsoft YaHei', 'WenQuanYi Micro Hei','museo_slab', 'tohoma,sans-serif';
+	color: white;
+	position: relative; /*子菜单出现位置基准*/
+	-webkit-transition: transform 0.1s;
+	-moz-transition: transform 0.1s;
+	-ms-transition: transform 0.1s;
+	-o-transition: transform 0.1s;
+	transition: transform 0.1s;
+}
+
+.nav_ul li:hover {
+	background:#000000;
+	-webkit-transform: scale(1.08,1.08);
+	-moz-transform: scale(1.08,1.08);
+	-ms-transform: scale(1.08,1.08);
+	-o-transform: scale(1.08,1.08);
+	transform: scale(1.08,1.08);
+}
+.nav_ul_sub{
+	display: none;
+	position: absolute;
+	top: 29px;
+	left: 0;
+	background: #2F3237;
+}
+.nav_ul_sub li{
+	height: 30px;
+	width: 100%;
+	display: block;
+	background:#000000;
+	border-top: 1px solid  #2F3237;
+}
+.nav_ul_sub li:hover{
+	background:#2F3237;
+}
+.nav_ul_sub a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight:  bolder;
+	font-family: 'Microsoft YaHei', 'WenQuanYi Micro Hei','museo_slab', 'tohoma,sans-serif';
+	color: white;
+}
+
+.nav_ul_sub a:hover{
+	text-decoration: none;
+}
+.nav_ul_sub a:active{
+	text-decoration: none;
+}
+.nav_ul_sub a:visited{
+	text-decoration: none;
+}
+/******footer.css底部样式******/
+.main_footer{
+	clear: both;
+	width: 100%;
+	height: auto;
+	background: #cdcdcd;
+}
+.main_footer_content{
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.main_footer_content p{
+	width: 100%;
+    padding-top: 10px;
+	color: #8e8e8e;
+	line-height: 15px;
+	font-size: 15px;
+	font-family: 'Microsoft YaHei', 'WenQuanYi Micro Hei','museo_slab', 'tohoma,sans-serif';
+}
+
+/********body公用部分css********/
+.main_wrapper{
+	width: 1000px;
+	height:auto;
+	margin: 0 auto;
+	background: #F5F5F5;
+	padding-top: 90px;
+	position: relative;
+}
+.article_container{
+	margin: 5px;
+	width: 720px;
+	float: left;
+}
+.article_body{
+	margin: 5px;
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-bottom: 20px;
+	padding: 5px;
+	background: white;
+	border:1px solid #DADADA;
+	border-radius: 7px;
+	box-shadow: 5px 5px 10px #DADADA;
+}
+.aside_container{
+	margin: 5px;
+	width: 260px;
+	float: left;
+}
+.aside_sns img{
+	padding-top: 10px;
+	max-width:100px; 
+	_width:expression_r(this.width<400px?"auto":"400px");
+	-webkit-transition: transform 0.1s;
+	-moz-transition: transform 0.1s;
+	-ms-transition: transform 0.1s;
+	-o-transition: transform 0.1s;
+	transition: transform 0.1s;
+}
+.aside_sns img:hover{
+	padding-top: 10px;
+	max-width:100px; 
+	_width:expression_r(this.width<400px?"auto":"400px");
+	-ms-transform:scale(1.2,1.2); 	 
+	-moz-transform:scale(1.2,1.2); 	 
+	-webkit-transform:scale(1.2,1.2);  
+	-o-transform:scale(1.2,1.2);  
+	transform:scale(1.2,1.2);
+}
+.aside_article{
+	margin: 5px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #DADADA;
+	box-shadow: 5px 5px 10px #DADADA ;
+	background: white;
+}
+.aside_article header{
+	margin: 0 atuo;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	text-align: center;
+	border-bottom: 1px solid #BCC0C4;
+	color: #2e3038;
+
+	font-family: 'Microsoft PhagsPa','museo_slab','Microsoft YaHei', 'WenQuanYi Micro Hei', 'tohoma,sans-serif';
+	font-size: 18px;
+	font-weight: bold;
+}
+.aside_article p{
+	font-family: 'Microsoft PhagsPa','museo_slab','Microsoft YaHei', 'WenQuanYi Micro Hei', 'tohoma,sans-serif';
+	font-size: 16px;
+	line-height: 20px;
+	color: #2e3235;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#scroll_top_button{
+	display: none;
+	position: absolute;
+	z-index: 99999;
+	width: 48px;
+	height: 49px;
+	background: url('../image/scroll_top.png') no-repeat;
+	cursor: pointer;
+}
+#scroll_top_button:hover{
+	background: url('../image/scroll_top.png') no-repeat -48px 0;
+}
+
