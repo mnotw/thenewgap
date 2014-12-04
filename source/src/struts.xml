@@ -29,9 +29,9 @@
 		<result name="success" type="redirect">/</result>
 	</action>
 	
-	<!-- 欢迎页面 -->
+	<!-- 欢迎页面 --><!-- redirect -->
 	<action name="" class="com.thenewgap.action.ArticleAction" method="findAll">
-		<result type="redirect">/getAllArticle</result>
+		<result type="dispatcher">/index.jsp</result>
 	</action>
 	
 	<!-- 文章页面处理 转发 -->
