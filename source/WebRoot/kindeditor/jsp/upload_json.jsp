@@ -21,7 +21,7 @@
 	String savePath = SaeUserInfo.getSaeTmpPath() + "/";
 
 	//文件保存目录URL
-	String saveUrl = request.getContextPath() + "/attached/";
+	String saveUrl = "";
 
 	//定义允许上传的文件扩展名
 	HashMap<String, String> extMap = new HashMap<String, String>();
@@ -52,7 +52,7 @@
 	}
 	//创建文件夹
 	savePath += dirName + "/";
-	saveUrl += dirName + "/";
+
 	File saveDirFile = new File(savePath);
 	if (!saveDirFile.exists()) {
 		saveDirFile.mkdirs();
@@ -60,7 +60,7 @@
 	SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
 	String ymd = sdf.format(new Date());
 	savePath += ymd + "/";
-	saveUrl += ymd + "/";
+
 	File dirFile = new File(savePath);
 	if (!dirFile.exists()) {
 		dirFile.mkdirs();
