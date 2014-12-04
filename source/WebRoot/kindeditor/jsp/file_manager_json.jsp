@@ -4,14 +4,6 @@
 <%@ page import="org.json.simple.*" %>
 <%
 
-/**
- * KindEditor JSP
- *
- * 本JSP程序是演示程序，建议不要直接在实际项目中使用。
- * 如果您确定直接使用本程序，使用之前请仔细确认相关安全设置。
- *
- */
-
 //根目录路径，可以指定绝对路径，比如 /var/www/attached/
 String rootPath = pageContext.getServletContext().getRealPath("/") + "attached/";
 //根目录URL，可以指定绝对路径，比如 http://www.yoursite.com/attached/
