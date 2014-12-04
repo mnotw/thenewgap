@@ -44,6 +44,11 @@
 		<result name="success" type="dispatcher">/article.jsp</result>
 	</action>
 	
+	<!-- 添加文章 -->
+	<action name="addArticle" class="com.thenewgap.action.ArticleAction" method="insert">
+		<result name="success" type="redirect">/article/addarticle.jsp</result>
+	</action>
+	
 	<!-- 欢迎页面 
 	<action name="" class="com.thenewgap.action.UserAction" method="findAll">
 	<result></result>

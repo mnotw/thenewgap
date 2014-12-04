@@ -34,6 +34,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			.editorContainer{
 				/*background: #F5F5F5;*/
 				background: white;
+				width: 800px;
 				margin-left: 20px;
 				margin-right: 20px;
 				margin: 10px;
@@ -56,19 +57,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</style>
 	</head>
 	<body>
-		<form id="example" name="example" method="post" action="/addArticle"  ENCTYPE="multipart/form-data" >
+		<form id="example" name="example" method="post" action="<%=path %>/addArticle" >
 			<div class="titleContainer">
 				<form action="" method="post">
-					 <input type="text" placeholder="title"/><br/>
-					 <input type="text" placeholder="author"/><br/>
-					 <input type="file" placeholder="image"/><br/>		 
+					 <input type="text" name = "article.title" placeholder="title"/><br/>
+					 <input type="text" name = "article.author" placeholder="author"/><br/>
+					 <input type="text" name = "article.image" placeholder="image"/><br/>		 
 				</form>
 			</div>
 			<div class="editorContainer">
-				article content
-				
-				<textarea id="newsContent" name="newsContent" cols="100" rows="8" style="width:100%;height:100%;visibility:hidden;"></textarea>
-				<input type="button" name="button" value="提交内容"  />
+				<textarea name="article.content" cols="100" rows="8" style="width:100%;height:100%;visibility:hidden;"></textarea>
+				<input type="button" name="submitButton" value="提交内容"  />
 			</div>
 		</form>
 	<script charset="utf-8" src="../kindeditor/kindeditor.js"></script>

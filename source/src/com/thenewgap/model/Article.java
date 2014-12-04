@@ -43,18 +43,6 @@ public class Article {
 	private String author;
 	@Column(name="image")
 	private String image;
-	/**
-	 * @return the image
-	 */
-	public String getImage() {
-		return image;
-	}
-	/**
-	 * @param image the image to set
-	 */
-	public void setImage(String image) {
-		this.image = image;
-	}
 	@Column(name="category")
 	private String category;
 	@Column(name="content")
@@ -120,5 +108,10 @@ public class Article {
 	public void setIsShow(char isShow) {
 		this.isShow = isShow;
 	}
-	
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
 }

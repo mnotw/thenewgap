@@ -1,5 +1,5 @@
 KindEditor.ready(function(K) {
-			var editor1 = K.create('textarea[name="newsContent"]', {
+			var editor1 = K.create('textarea[name="article.content"]', {
 				cssPath : '../kindeditor/plugins/code/prettify.css',
 				uploadJson : '../kindeditor/jsp/upload_json.jsp',
 				fileManagerJson : '../kindeditor/jsp/file_manager_json.jsp',
@@ -27,11 +27,10 @@ KindEditor.ready(function(K) {
 				}
 			});
 			prettyPrint();
-			K('input[name=button]').click(function(e) {
+			K('input[name=submitButton]').click(function(e) {
 				editor1.sync();
-				var flag=checkTheValue();
-				if(flag=='true'){
+				 
 				document.forms['example'].submit();
-				}
+				 
 			});
 		});

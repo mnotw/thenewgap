@@ -1,11 +1,10 @@
 /******************************************************************************
- * Copyright (C) Jonathan Zhang -- thenewgap.com
- * All Rights Reserved.
- * 本软件为thenewgap.com开发研制。未经正式书面同意，其他任何个人、团体
- * 不得使用、复制、修改或发布本软件.
+ * Author Jonathan Zhang -- thenewgap.com
+ * Under the MIT License
  *****************************************************************************/
 package com.thenewgap.action;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -47,7 +46,11 @@ public class ArticleAction extends ActionSupport {
 	@Resource(name = "articleService")
 	ArticleService service;
 
-	public String inseart() {
+	public String insert() {
+		this.article.setPostDate(new Date());
+		this.article.setCategory("1");
+		this.article.setIsShow('1');
+		this.article.setShareTimes(0);
 		service.insertArticle(article);
 		return "success";
 	}
