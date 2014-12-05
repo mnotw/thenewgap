@@ -21,7 +21,7 @@ public class UserDaoImpl implements UserDao {
 	}
  
 	public void deleteById(long id){
-		User user=(User) template.get(User.class, id);
+		User user=template.get(User.class, id);
 		template.delete(user);
 	}
 	

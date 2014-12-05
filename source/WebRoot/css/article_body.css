@@ -29,6 +29,12 @@
 	margin-right: 30px;
 	background: url('../image/comment_counter.gif') no-repeat 0 -80px;
 }
+.article_image{
+	overflow: hidden;
+	width: 680px;
+	height: 238px;
+	margin: 0 auto;	
+}
 .article_image img{
 	width: 680px;
 	height: 238px;
@@ -36,18 +42,18 @@
 	display: block;
 	position: relative;
 	box-shadow: 5px 5px 10px #DADADA;
-	-webkit-transition: transform 0.1s;
-	-moz-transition: transform 0.1s;
-	-ms-transition: transform 0.1s;
-	-o-transition: transform 0.1s;
-	transition: transform 0.1s;
+	-webkit-transition: transform 0.3s;
+	-moz-transition: transform 0.3s;
+	-ms-transition: transform 0.3s;
+	-o-transition: transform 0.3s;
+	transition: transform 0.3s;
 }
 .article_image img:hover{
-	-webkit-transform: scale(1.03,1.03);
-	-moz-transform: scale(1.03,1.03);
-	-ms-transform: scale(1.03,1.03);
-	-o-transform: scale(1.03,1.03);
-	transform: scale(1.03,1.03);
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
 }
 .article_content{
 	padding: 15px;

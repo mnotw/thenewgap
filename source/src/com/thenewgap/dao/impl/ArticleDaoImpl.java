@@ -21,7 +21,7 @@ public class ArticleDaoImpl implements ArticleDao {
 	}
  
 	public void deleteById(int id){
-		Article Article=(Article) template.get(Article.class, id);
+		Article Article=template.get(Article.class, id);
 		template.delete(Article);
 	}
 	
