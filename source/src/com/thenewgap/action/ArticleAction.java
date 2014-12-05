@@ -15,23 +15,11 @@ import com.thenewgap.service.ArticleService;
 
 /**
  * 
- * @author 张文锋
- * 
- *         <p>
+ * @author Jonathan Zhang
  *         Modification History:
- *         </p>
- *         <p>
- *         Date Author Description
- *         </p>
- *         <p>
+ *         Date		Author		Description
  *         ------------------------------------------------------------------
- *         </p>
- *         <p>
- *         2014-11-29 张文锋 新建
- *         </p>
- *         <p>
- *         ....
- *         </p>
+ *         2014-11-29	Jonathan Zhang 	Created
  */
 public class ArticleAction extends ActionSupport {
 
