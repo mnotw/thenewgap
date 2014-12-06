@@ -14,28 +14,13 @@ import com.thenewgap.dao.MenuDao;
 import com.thenewgap.model.Menu;
 
 /**
- * 
- * @author Jonathan Zhang
- * 
- *         <p>
- *         Modification History:
- *         </p>
- *         <p>
- *         Date Author Description
- *         </p>
- *         <p>
+ * @author Jonathan Zhang Modification History: Date Author Description
  *         ------------------------------------------------------------------
- *         </p>
- *         <p>
  *         2014-12-5 Jonathan Zhang Created
- *         </p>
- *         <p>
- *         ....
- *         </p>
  */
 @Component("menuService")
 public class MenuService {
-	@Resource(name = "MenuDao")
+	@Resource(name = "menuDao")
 	private MenuDao dao;
 
 	public List<Menu> findAll() {
@@ -55,10 +40,11 @@ public class MenuService {
 		StringBuffer sub = new StringBuffer();
 		Menu menu = null;
 		Menu subMenu = null;
+		sb.append("<ul class='nav_ul'>");
 		for (int i = 0; i < list.size(); i++) {
 			menu = list.get(i);
-			if (menu.getParentCode() == "0") {
-				sb.append("<ul class='nav_ul'><li>");
+			if ("0".equals(menu.getParentCode())) {
+				sb.append("<li>");
 				sb.append(menu.getName());
 				sub = new StringBuffer();
 				for (int j = 0; j < list.size(); j++) {
@@ -79,6 +65,7 @@ public class MenuService {
 				sb.append("</li>");
 			}
 		}
+		sb.append("</ul>");
 		return sb.toString();
 	}
 }

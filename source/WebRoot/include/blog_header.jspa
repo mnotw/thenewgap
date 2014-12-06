@@ -3,6 +3,8 @@
 			<div class="blog_title">Jonathan's Blog</div>
 			<div class="blog_nav_bar">
 				<nav class="blog_nav">
+					<s:property value="menuHtml"  escape="false"/>
+					<%/*
 					<ul class="nav_ul">
 						<li>
 							News
@@ -40,6 +42,7 @@
 							</ul>
 						</li>
 					</ul>
+					*/%>
 			    </nav>
 			</div>
 		</header>

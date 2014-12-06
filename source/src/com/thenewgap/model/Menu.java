@@ -27,23 +27,23 @@ import org.springframework.stereotype.Component;
 public class Menu {
 	@Id
 	@Column(name="code")
-	private int code;
+	private String code;
 	@Column(name="name")
 	private String name;
 	@Column(name="parent_code")
 	private String parentCode;
 	@Column(name="url")
 	private String url;
-	@Column(name="isEnable")
+	@Column(name="is_enable")
 	private String isEnable;
 	@Column(name="remark")
 	private String remark;
-	@Column(name="orderNo")
-	private int orderNO;
-	public int getCode() {
+	@Column(name="order_no")
+	private String orderNO;
+	public String getCode() {
 		return code;
 	}
-	public void setCode(int code) {
+	public void setCode(String code) {
 		this.code = code;
 	}
 	public String getName() {
@@ -76,11 +76,12 @@ public class Menu {
 	public void setRemark(String remark) {
 		this.remark = remark;
 	}
-	public int getOrderNO() {
+	public String getOrderNO() {
 		return orderNO;
 	}
-	public void setOrderNO(int orderNO) {
+	public void setOrderNO(String orderNO) {
 		this.orderNO = orderNO;
 	}
+	
 }
 

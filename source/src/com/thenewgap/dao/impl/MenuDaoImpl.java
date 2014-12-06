@@ -31,7 +31,7 @@ public class MenuDaoImpl implements MenuDao {
 	
 	public List<Menu> findAll() {
 		@SuppressWarnings("unchecked")
-		List<Menu> list=template.find ( "from User" );
+		List<Menu> list=template.find ( "from Menu" );
 		return list;
 	}
 
