@@ -16,11 +16,11 @@ import javax.persistence.Table;
 import org.springframework.stereotype.Component;
 
 /**  
- * @author      张文锋
+ * @author      Jonathan Zhang
  *  Modification History: 
  *  Date         Author     Description 
  * ------------------------------------------------------------------  
- * 2014-11-28    JOnathan Zhang      Created
+ * 2014-11-28    Jonathan Zhang      Created
  */
 @Component("article")
 @Entity

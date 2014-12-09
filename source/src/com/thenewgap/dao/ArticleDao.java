@@ -12,12 +12,12 @@ import com.thenewgap.model.Article;
 
 /**  
  * 
- * @author      张文锋
+ * @author      Jonathan Zhang
  *  
  * <p> Modification History:</p> 
  * <p> Date         Author     Description </p>  
  * <p>------------------------------------------------------------------</p>  
- * <p>2014-11-29    张文锋      新建</p>
+ * <p>2014-11-29    Jonathan Zhang      新建</p>
  * <p>....</p>  
  */
 public interface ArticleDao {
