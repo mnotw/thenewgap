@@ -8,7 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 	<head>
 		<mata charset="utf-8">
-		<title>写作</title>
+		<title>添加新博文</title>
 		<link rel="stylesheet" type="text/css" href="../css/reset.css">
 		<link rel="stylesheet" href="../kindeditor/themes/default/default.css" />
 	    <link rel="stylesheet" href="../kindeditor/plugins/code/prettify.css" />

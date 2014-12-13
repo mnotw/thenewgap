@@ -48,7 +48,15 @@ public class Article {
 	private int shareTimes;
 	@Column(name="is_show")
 	private char isShow;
+	@Column(name="label")
+	private String label;
 	
+	public String getLabel() {
+		return label;
+	}
+	public void setLabel(String label) {
+		this.label = label;
+	}
 	public int getId() {
 		return id;
 	}
