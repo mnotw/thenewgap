@@ -8,7 +8,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <html>
 	<head>
 		<%@include file="include/head.jspa" %>
-		<meta name="thenewgap">
+		<meta name="robots" content="index,follow" />
+		<meta name="description" content="<s:property value="article.title"/>" />
 		<meta name="keywords" content="<s:property value="article.label"/>">
 		<title><s:property value="article.title"/></title>
 		<link rel="stylesheet" type="text/css" href="css/article_body.css"/>
