@@ -32,4 +32,6 @@ public interface ArticleDao {
 	/*public List<Article> findByName(String name);*/
 	
 	public Article findById(int id);
+	
+	public List<Article> findByCategory(String category);
 }

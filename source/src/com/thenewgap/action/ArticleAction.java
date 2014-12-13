@@ -29,6 +29,7 @@ public class ArticleAction extends ActionSupport {
 	private Article article;
 	private List<Article> list;
 	private String menuHtml;
+	private String category;
 	private int id;
 
 	@Resource(name = "articleService")
@@ -95,6 +96,10 @@ public class ArticleAction extends ActionSupport {
 		return "success";
 	}
 
+	public String findCategory(){
+		this.setList(service.findByCategory(this.category));
+		return "success";
+	}
 	public Article getArticle() {
 		return article;
 	}
@@ -125,5 +130,13 @@ public class ArticleAction extends ActionSupport {
 
 	public void setMenuHtml(String menuHtml) {
 		this.menuHtml = menuHtml;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 }

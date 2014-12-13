@@ -35,13 +35,17 @@ public class ArticleDaoImpl implements ArticleDao {
 		template.update(Article);
 	}
 
-	/*public List<Article> findById(int name) {
-		List<Article> list=template.find("from Article a where u.name=?", name);  
-		return list;
-	}*/
-
 	public Article findById(int id) {
 		return template.get(Article.class, id);
+	}
+
+	/**
+	 *get target articles by category
+	 */
+	public List<Article> findByCategory(String category) {
+		@SuppressWarnings("unchecked")
+		List<Article> list=template.find("from Article a where a.category=?", category);  
+		return list;
 	}
 
 }

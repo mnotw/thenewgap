@@ -35,6 +35,7 @@ public class UserDaoImpl implements UserDao {
 		template.update(user);
 	}
 
+	@SuppressWarnings("unchecked")
 	public List<User> findByName(String name) {
 		List<User> list=template.find("from User u where u.name=?", name);  
 		return list;

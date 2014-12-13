@@ -46,4 +46,9 @@ public class ArticleService {
 	public Article findById(int id) {
 		return dao.findById(id);
 	}
+	
+	@Transactional
+	public List<Article> findByCategory(String category) {
+		return dao.findByCategory(category);
+	}
 }
